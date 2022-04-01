@@ -1,0 +1,44 @@
+body {
+    background-color: #023047;
+}
+
+h1 {
+    font-size: 63px;
+    color: #fb8500;
+    text-align: center;
+}
+
+p {
+    color: #ffb703;
+}
+.site-menu-item{
+  
+    display: inline-block;
+}
+hr {
+    color: #219ebc;
+    padding: 5px;
+    background-color: #219ebc;
+}
+
+a:link {
+    background-color: #ca6702;
+    color: #e5e5e5;
+    text-align: center;
+    padding: 15px 25px;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #e5e5e5;
+    text-decoration: none;
+
+}
+
+a:hover, a:active{
+    color:#ffffff;
+    text-align: center;
+    background-color: black;
+}
+
+ 
