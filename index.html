@@ -7,19 +7,46 @@
     <link href="./css/styles.css" rel="stylesheet" />
     <title>Pagina</title>
   </head>
-  <body> 
+  <body>
     <nav class="site-menu-nav">
+      <!-- LOGO -->
+      <div class="logo">MUO</div>
       <ul class="site-menu">
-        <li class="site-menu-item"><a href="./web/contenido.html">About</a></li>
-        <li class="site-menu-item"><a href="./web/Experience.html">Experience</a></li>
-        <li class="site-menu-item"><a href="./web/gallery.html">Gallery</a></li>
-        <li class="site-menu-item"><a href="./web/residences.html">Residences</a></li>
-        <li class="site-menu-item"><a href="./web/contact.html">Contact</a></li>
+        <!-- USING CHECKBOX HACK -->
+        <input type="checkbox" id="checkbox_toggle" />
+        <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+        <!-- NAVIGATION MENUS -->
+        <div class="menu">
+          <li class="site-menu-item">
+            <a href="./web/contenido.html">About</a>
+          </li>
+          <li class="services">
+            <a href="./web/Experience.html">Experience</a>
+            <!-- DROPDOWN MENU -->
+            <ul class="dropdown">
+              <li><a href="/">Spa </a></li>
+              <li><a href="/">Fun</a></li>
+              <li><a href="/">Water</a></li>
+              <li><a href="/">Trip</a></li>
+              <li><a href="/">Fun</a></li>
+            </ul>
+          </li>
+          <li class="site-menu-item">
+            <a href="./web/gallery.html">Gallery</a>
+          </li>
+          <li class="site-menu-item">
+            <a href="./web/residences.html">Residences</a>
+          </li>
+
+          <li class="site-menu-item">
+            <a href="./web/contact.html">Contact</a>
+          </li>
+        </div>
       </ul>
     </nav>
     <h1>Primer titulo</h1>
     <a href="/web/contenido.html">Acerca</a>
-    
+
     <p>
       Lorem Ipsum is simply dummy text of the printing and typesetting industry.
       Lorem Ipsum has been the industry's standard dummy text ever since the
