@@ -44,19 +44,51 @@
         </div>
       </ul>
     </nav>
-    <h1>Primer titulo</h1>
-    <a href="/web/contenido.html">Acerca</a>
+    <script>
+      var video = document.getElementById("myVideo");
+      var btn = document.getElementById("myBtn");
 
-    <p>
-      Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-      Lorem Ipsum has been the industry's standard dummy text ever since the
-      1500s, when an unknown printer took a galley of type and scrambled it to
-      make a type specimen book. It has survived not only five centuries, but
-      also the leap into electronic typesetting, remaining essentially
-      unchanged. It was popularised in the 1960s with the release of Letraset
-      sheets containing Lorem Ipsum passages, and more recently with desktop
-      publishing software like Aldus PageMaker including versions of Lorem
-      Ipsum.
-    </p>
+      function myFunction() {
+        if (video.paused) {
+          video.play();
+          btn.innerHTML = "Pause";
+        } else {
+          video.pause();
+          btn.innerHTML = "Play";
+        }
+      }
+    </script>
+    <video autoplay muted loop id="myVideo">
+      <source src="./media/main.mp4" type="video/mp4" />
+      Your browser does not support HTML5 video.
+    </video>
+    <div class="content">
+      <h1>Pagina version 1</h1>
+      <p>
+        Lorem ipsum dolor sit amet, an his etiam torquatos. Tollit soleat
+        phaedrum te duo, eum cu recteque expetendis neglegentur. Cu mentitum
+        maiestatis persequeris pro, pri ponderum tractatos ei. Id qui nemore
+        latine molestiae, ad mutat oblique delicatissimi pro.
+      </p>
+      <button id="myBtn" onclick="myFunction()">Pause</button>
+    </div>
+       <div class="content2">
+      <h1>Pagina version 1</h1>
+      <p>
+        Lorem ipsum dolor sit amet, an his etiam torquatos. Tollit soleat
+        phaedrum te duo, eum cu recteque expetendis neglegentur. Cu mentitum
+        maiestatis persequeris pro, pri ponderum tractatos ei. Id qui nemore
+        latine molestiae, ad mutat oblique delicatissimi pro.
+      </p>
+    </div>
+       <div class="content3">
+      <h1>Pagina version 1</h1>
+      <p>
+        Lorem ipsum dolor sit amet, an his etiam torquatos. Tollit soleat
+        phaedrum te duo, eum cu recteque expetendis neglegentur. Cu mentitum
+        maiestatis persequeris pro, pri ponderum tractatos ei. Id qui nemore
+        latine molestiae, ad mutat oblique delicatissimi pro.
+      </p>
+     </div>
   </body>
 </html>
