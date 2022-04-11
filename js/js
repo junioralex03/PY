@@ -13,3 +13,5 @@ function myFunction() {
 }
 
 // final
+JQuery("#%%ELEMENT_ID%%").off('click');
+JQuery("#%%ELEMENT_ID%%").click("window.print()");
